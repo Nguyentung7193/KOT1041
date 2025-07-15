@@ -12,20 +12,3 @@ fun main() {
     println("\t cha mẹ thói đời \"ăn ở bạc\"")
     println("\t có chồng hờ hững cũng như không")
 }
-fun main2() {
-fun calculateOperations() {
-    print("Enter number a: ")
-    val a = readLine()?.toDoubleOrNull() ?: return println("Invalid input for a")
-    print("Enter number b: ")
-    val b = readLine()?.toDoubleOrNull() ?: return println("Invalid input for b")
-
-    println("Sum: ${a + b}")
-    println("Difference: ${a - b}")
-    println("Product: ${a * b}")
-    if (b != 0.0) {
-        println("Quotient: ${a / b}")
-    } else {
-        println("Cannot divide by zero")
-    }
-}
-}

@@ -13,7 +13,7 @@ fun main() {
     val genderStr = when (gender) {
         0 -> "Nam"
         1 -> "Nữ"
-        else -> "Không xác định"
+        else -> "LGBT"
     }
 
     val ageGroup = when (age) {

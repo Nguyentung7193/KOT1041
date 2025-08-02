@@ -19,6 +19,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 
 @Composable
@@ -33,7 +34,7 @@ fun Lap4b1() {
             .padding(24.dp),
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Đăng nhập", style = MaterialTheme.typography.headlineMedium)
+        Text(text = "Đăng nhập", style = MaterialTheme.typography.headlineMedium, fontSize = 12.sp)
 
         Spacer(modifier = Modifier.height(24.dp))
 

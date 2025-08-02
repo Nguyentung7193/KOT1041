@@ -54,32 +54,14 @@ fun Lap4b3() {
         "Chủ nhật này chấm ASM cả 2 môn",
         "Chủ nhật này chấm ASM cả 2 môn"
     )
-    Scaffold(
-        floatingActionButton = {
-            FloatingActionButton(
-                onClick = {
-                    Toast.makeText(
-                        context,
-                        "Thêm ghi chú mới",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                },
-                containerColor = MaterialTheme.colorScheme.primary
-            ) {
-                Icon(imageVector = Icons.Default.Add, contentDescription = "Thêm ghi chú")
-            }
-        }
-    ) { innerPadding ->
-        LazyColumn(
-            modifier = Modifier
-                .padding(innerPadding)
-                .fillMaxSize()
-                .padding(16.dp)
-        ) {
-            items(notes) { note ->
-                NoteItem(title = note)
-                Spacer(modifier = Modifier.height(12.dp))
-            }
+    LazyColumn(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(8.dp)
+    ) {
+        items(notes) { note ->
+            NoteItem(title = note)
+            Spacer(modifier = Modifier.height(12.dp))
         }
     }
 }

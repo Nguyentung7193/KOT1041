@@ -1,4 +1,4 @@
-package com.example.kot1041_app.demo.sang
+package com.example.kot1041_app.lap.lap3
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -8,7 +8,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.text.appendInlineContent
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.*

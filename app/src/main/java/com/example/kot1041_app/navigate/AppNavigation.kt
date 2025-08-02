@@ -22,6 +22,10 @@ import com.example.kot1041_app.lap.lap3.StudentProfileScreen
 import com.example.kot1041_app.lap.lap5.Lap5b1
 import com.example.kot1041_app.lap.lap5.Lap5b2
 import com.example.kot1041_app.lap.lap5.Lap5b3
+import com.example.kot1041_app.lap.lap6.Lap6b1
+import com.example.kot1041_app.lap.lap6.Lap6b2
+import com.example.kot1041_app.lap.lap6.Lap6b3
+import com.example.kot1041_app.lap.lap6.createTheaterSeating
 import com.example.kot1041_app.screens.menu.BottomNavBar
 
 @Composable
@@ -53,7 +57,7 @@ fun AppNavigation() {
 
             composable("lap4b2") {
                 showBottomBar = true
-                fabContent = {null}
+                fabContent = { null }
                 Lap4b2()
             }
 
@@ -79,17 +83,40 @@ fun AppNavigation() {
                 showBottomBar = true
                 fabContent = null
                 // Replace with your Lap5b1 composable
-                 Lap5b1()
+                Lap5b1()
             }
             composable("lap5b2") {
                 showBottomBar = true
                 fabContent = null
-                 Lap5b2()
+                Lap5b2()
             }
             composable("lap5b3") {
                 showBottomBar = true
                 fabContent = null
-                 Lap5b3()
+                Lap5b3()
+            }
+            composable("lap6b1") {
+                showBottomBar = true
+                fabContent = null
+                Lap6b1()
+            }
+            composable("lap6b2") {
+                showBottomBar = true
+                fabContent = null
+                Lap6b2()
+            }
+            composable("lap6b3") {
+                showBottomBar = true
+                fabContent = null
+                Lap6b3(
+                    createTheaterSeating(
+                        totalRows = 12,
+                        totalSeatsPerRow = 9,
+                        aislePositionInRow = 4,
+                        aislePositionInColumn = 5
+                    ),
+                    totalSeatsPerRow = 9
+                )
             }
         }
     }
